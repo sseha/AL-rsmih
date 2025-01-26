@@ -1,0 +1,11 @@
+const form = document.querySelector('form');
+const submitButton = document.querySelector('input[type="submit"]');
+
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	const patientName = document.querySelector('input[name="patient_name"]').value;
+	const idNumber = document.querySelector('input[name="id_number"]').value;
+	const doctorName = document.querySelector('input[name="doctor_name"]').value;
+	const injuryDate = document.querySelector('input[name="injury_date"]').value;
+	const injuryType = document.querySelector('input[name="injury_type"]').value;
+	const injuryDuration = document.querySelector('input[name="injury_duration"]').value;
